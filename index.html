@@ -1,70 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bandral Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <style>
-    .card-wrapper {
-        padding: 10px;
-        border: 1px solid gray;
-        width: 200px;
-    }
-    
-    .card-wrapper .card-header img {
-        width: 100%; 
-    }
 
-    .card-wrapper .card-content .card-title{
-        font-size: 20px;
-
-    }
-
-    .card-wrapper .card-content{
-        padding: 5px;
-    }
-
-    .card-wrapper .card-content .card-description {
-        font-size: 16px;
-
-    }
-    .card-wrapper .card-content .card-info{
-        text-align: right;
-    }
-
-    .card-wrapper .card-content .card-info .button{
-        background-color: gray;
-        padding: 5px;
-        border-radius:4px;
-        display: inline-block;
-        color: #fff;
-
-    }
     </style>
 </head>
+
 <body>
 
-    <h1> Hello World! </h1>
+    <div class="header-wrap">
+        <nav class="navbar navbar-expand-lg bg-light container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="https://static.thenounproject.com/png/1406661-200.png"
+                        alt="Bootstrap" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Order here</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Food choices
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Indian</a></li>
+                                <li><a class="dropdown-item" href="#">Greek</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Recommended</a></li>
+                            </ul>
+                        </li>
 
-    <div class="wrapper">
-        <div class="card-wrapper">
-            <div class="card-header">
-                <img src="https://media-cdn.grubhub.com/image/upload/f_auto,fl_lossy,q_auto,c_crop,g_north_west,h_1400,w_1500/v1656688653/homepage/DfxwD.png">
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="card-content">
-                <div class="card-title"> Title
-                </div>
-                <div class="card-description">Description 1
-                </div>
-                <div class="card-info"> 
-                    <div class="button">$4.00</div>
-                </div>
-
-            </div>
-        </div>    
+        </nav>
     </div>
+
+    <!-- Section-1 -->
+    <div id="carouselExampleControlsNoTouching" class="carousel slide container" data-bs-touch="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/dd109bb1f7572eed.png" class="d-block w-100"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/8148ef38ec4096b7.png" class="d-block w-100"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://orquest.com/wp-content/uploads/2021/01/food-delivery-man-in-medical-mask-and-gloves-brought-salads-of-fruits-and-vegetables-in-plastic-boxes-to-the-young-woman-s-house.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- section -2 how it works-->
     
+    <div class="container text-center">  
+        <div class="my-5">
+            <h2>How it works</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card border-0">
+                <img src="https://cdn.makegoodfood.ca/images/home/how-it-works/Goodfood_home_how_it_works_visual_5.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">We create original recipes</h5>
+                  <p class="card-text">Our in-house culinary team uses premium ingredients to create unique menus and prodcuts for breakfast, lunch, and dinner.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="https://cdn.makegoodfood.ca/images/home/how-it-works/Goodfood_home_how_it_works_visual_6.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">You choose your prefrences</h5>
+                  <p class="card-text">Choose form a variety of healthy, delicous meals each week that accomodate your dietary prefrences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="https://cdn.makegoodfood.ca/images/home/how-it-works/Goodfood_home_how_it_works_visual_7.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">We dilver weekly -for free.</h5>
+                  <p class="card-text">Your ingredients are packaged in our temperature-conditioned boxes, so food stays fresh -even when you aren't at home.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="https://cdn.makegoodfood.ca/images/home/how-it-works/Goodfood_home_how_it_works_visual_8.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">You eat incredible meals everyday</h5>
+                  <p class="card-text">Our recipes are crated to cater to all cooking levels and styles. From a one-minute weekday breakfast to a delicous two-course dinner made with your own hands, our recipes cater to all cooking levels and styles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <!-- Section -3 top meal -->
+    <div class="section-3-wrap container">
+        <h1 class="py-5 text-center">Order Here!</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://d1ralsognjng37.cloudfront.net/d69bbd80-5543-4590-8a9c-ef27dfc55d44.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Indian Food</h5>
+                        <p class="card-text">Traditional Indian Thalo.</p>
+                        <a href="#" class="btn btn-primary">$60.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODYyNmY1OGNhMTZjYWZkYWY3NTVhODUyNmEzZDg2NjkvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw=="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Johnny's Burger Company</h5>
+                        <p class="card-text">Full Burger Meal</p>
+                        <a href="#" class="btn btn-primary">$4.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://duyt4h9nfnj50.cloudfront.net/resized/0b5d35148cea821df5e8a872a02d8740-w550-c4.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sushi Time</h5>
+                        <p class="card-text">Crunchy Box.</p>
+                        <a href="#" class="btn btn-primary">$15.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://d1ralsognjng37.cloudfront.net/1303d719-2ba4-4976-abf8-3124b984daff.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shoarma</h5>
+                        <p class="card-text">Chicken Shoarma.</p>
+                        <a href="#" class="btn btn-primary">$25.00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section-->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-dark"
+            style="background-color: #ECEFF1"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #21D192"
+               >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">Company name</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">MDBootstrap</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">MDWordPress</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">BrandFlow</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Bootstrap Angular</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Your Account</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Become an Affiliate</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"
+           >MDBootstrap.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
