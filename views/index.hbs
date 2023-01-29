@@ -79,49 +79,18 @@
     <div class="section-3-wrap container">
         <h1 class="py-5 text-center">Order Here!</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
+            {{#each mealkits}}
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://d1ralsognjng37.cloudfront.net/d69bbd80-5543-4590-8a9c-ef27dfc55d44.jpeg"
+                    <img src="{{this.imageUrl}}"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Indian Food</h5>
-                        <p class="card-text">Traditional Indian Thalo.</p>
-                        <a href="#" class="btn btn-primary">$60.00</a>
+                        <h5 class="card-title">{{this.title}}</h5>
+                        <p class="card-text">{{this.includes}}</p>
+                        <a href="#" class="btn btn-primary">{{this.price}}</a>
                     </div>
                 </div>
             </div> 
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODYyNmY1OGNhMTZjYWZkYWY3NTVhODUyNmEzZDg2NjkvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw=="
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Johnny's Burger Company</h5>
-                        <p class="card-text">Full Burger Meal</p>
-                        <a href="#" class="btn btn-primary">$4.00</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://duyt4h9nfnj50.cloudfront.net/resized/0b5d35148cea821df5e8a872a02d8740-w550-c4.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sushi Time</h5>
-                        <p class="card-text">Crunchy Box.</p>
-                        <a href="#" class="btn btn-primary">$15.00</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://d1ralsognjng37.cloudfront.net/1303d719-2ba4-4976-abf8-3124b984daff.jpeg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Shoarma</h5>
-                        <p class="card-text">Chicken Shoarma.</p>
-                        <a href="#" class="btn btn-primary">$25.00</a>
-                    </div>
-                </div>
-            </div>
+            {{/each}}
         </div>
     </div>
