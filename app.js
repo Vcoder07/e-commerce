@@ -1,9 +1,13 @@
 var createError = require('http-errors');
 var express = require('express');
+const mongoose = require("mongoose");
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+mongoose.connect('mongodb+srv://verdan:qewBApWhNgXKsGjx@cluster0.elka3vu.mongodb.net/?retryWrites=true&w=majority')
+  .then(res => console.log(`Connection Succesful ${res}`))
+  .catch(err => console.log(`Error in DB connection ${err}`));
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 

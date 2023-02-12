@@ -60,5 +60,26 @@ module.exports = {
         }
         return error
     },
+
+    validationContact: (req) => {
+
+        let error = {}
+
+        if (req.body.email == '' || req.body.email == null) {
+            error.email = 'Email is required.'
+        }
+        if (req.body.name == '' || req.body.name == null) {
+            error.name = 'Name is required.'
+        }
+        if (req.body.subject == '' || req.body.subject == null) {
+            error.subject = 'Subject is required.'
+        }
+        if (req.body.message == '' || req.body.message == null) {
+            error.message = 'Message is required.'
+        }
+        return error
+    },
 }
+
+
 
